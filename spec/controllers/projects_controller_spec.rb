@@ -2,13 +2,13 @@ require 'spec_helper'
 
 describe ProjectsController do
   let(:user) do
-    user = Factory(:user)
+    user = FactoryGirl.create(:user)
     user.confirm!
     user
   end
-  
-  let(:project) { Factory(:project) }
-  
+
+  let(:project) { FactoryGirl.create(:project) }
+
   context "standard users" do
 
     it "cannot access the show action" do
@@ -39,5 +39,5 @@ describe ProjectsController do
     message = "The project you were looking for could not be found."
     flash[:alert].should eql(message)
   end
-  
+
 end
