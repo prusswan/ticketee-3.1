@@ -13,7 +13,7 @@ gem 'therubyracer', :platforms => :ruby
 
 gem 'dynamic_form'
 
-gem 'devise', '1.2.1'
+gem 'devise', '~> 1.2'
 gem 'cancan'
 
 gem 'paperclip'
