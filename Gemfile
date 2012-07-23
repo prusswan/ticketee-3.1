@@ -30,6 +30,7 @@ group :test do
   gem 'rack-test' #, :git => "git://github.com/radar/rack-test"
   gem 'cucumber-rails' #, :git => "git://github.com/cucumber/cucumber-rails"
   gem 'capybara' #, :git => "git://github.com/radar/capybara"
+  gem 'headless'
   gem 'database_cleaner'
   gem 'factory_girl'
   gem 'email_spec'
